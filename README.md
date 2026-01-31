@@ -45,6 +45,6 @@ Note: This analysis uses **partial data**, not complete data set.
 ![cleaned data](Screenshot_cleanedData.png)
 
 ### Pivot Tables and Pivot charts
-![1]()
+![1](Screenshot_pivotTable+chart_1.png)
 ![2]()
 
