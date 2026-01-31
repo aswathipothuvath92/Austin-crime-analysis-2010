@@ -35,3 +35,8 @@ Note: This analysis uses **partial data**, not complete data set.
 - Add charts and Screenshots from Excel
 - Improve Dashboard clarity and learn Data visualization tools
 - Analyze a more complete dataset in a future project
+
+## Screenshots
+
+### Cleaned data
+![cleaned data](Screenshot_cleanedData.png)
