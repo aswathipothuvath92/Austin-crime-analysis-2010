@@ -46,5 +46,5 @@ Note: This analysis uses **partial data**, not complete data set.
 
 ### Pivot Tables and Pivot charts
 ![1](Screenshot_pivotTable+chart_1.png)
-![2]()
+![2](Screenshot_pivotTable+chart_2.png)
 
