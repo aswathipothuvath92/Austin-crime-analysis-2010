@@ -38,5 +38,13 @@ Note: This analysis uses **partial data**, not complete data set.
 
 ## Screenshots
 
+### Dashboard
+![Dashboard](Screenshot_dashboard.png)
+
 ### Cleaned data
 ![cleaned data](Screenshot_cleanedData.png)
+
+### Pivot Tables and Pivot charts
+![1]()
+![2]()
+
