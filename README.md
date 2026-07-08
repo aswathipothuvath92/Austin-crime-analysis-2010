@@ -7,8 +7,7 @@ Note: This analysis uses **partial data**, not complete data set.
 
 ## View Project
 - [Interactive Excel workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU)
-- Each worksheet in the workbook represents a step in the analysis process
-- (original data,copied data,cleaned data,pivot table,interactive data,view only data)
+- Each worksheet in the workbook represents a step in the analysis process (Original data,copied data,cleaned data,pivot table,interactive data,view only data)
 
 ## Data Source
 - [Public dataset- Austin Crime Data (2010)](https://data.gov/)
@@ -39,12 +38,12 @@ Note: This analysis uses **partial data**, not complete data set.
 ## Screenshots
 
 ### Dashboard
-![Dashboard](Screenshot_dashboard.png)
+![Dashboard](Excel_Phase1/Screenshot_dashboard.png)
 
 ### Cleaned data
-![cleaned data](Screenshot_cleanedData.png)
+![cleaned data](Excel_Phase1/Screenshot_cleanedData.png)
 
 ### Pivot Tables and Pivot charts
-![1](Screenshot_pivotTable+chart_1.png)
-![2](Screenshot_pivotTable+chart_2.png)
+![1](Excel_Phase1/Screenshot_pivotTable+chart_1.png)
+![2](Excel_Phase1/Screenshot_pivotTable+chart_2.png)
 
