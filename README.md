@@ -11,7 +11,7 @@
 - **Standout technical decision:** Migrated from a flat Excel table to a star schema (`Fact_Crime_Data` + `Dim_Date`, `Dim_Offense`) to support scalable DAX measures, drill-through pages, and dynamic tooltip visuals
 - **Key finding:** Burglary was the most common offense (16.1K incidents, ~16.6% of total volume), followed by Theft/Larceny (13.8K) and Disturbance/Public Issues (11.8K) — together the top 3 categories account for roughly 43% of all incidents. Edward sector recorded the highest overall crime volume citywide.
 - **Excel exploratory analysis (Phase 1):** [Interactive workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) · [Screenshots](Excel_Phase1/)
-- **Power BI Dasboard (Phase 2):** [PowerBI Dashboard](PowerBI_Phase2/Austin_crime_data_analysis_powerbi.pbix)
+- **Power BI Dasboard (Phase 2):** [PowerBI Dashboard](PowerBI_Phase2/AustinCrime_Intelligence_Dashboard.pbix)
   
 ## Dashboard Preview
 
@@ -19,7 +19,7 @@
 
 ### Main Dashboard
 
-![Main Dashboard](PowerBI_Phase2/Main%20Dashboard%20View.png)
+![Main Dashboard](PowerBI_Phase2/Dashboard%20View.png)
 
 
 ---
@@ -194,18 +194,18 @@ Austin-Crime-Intelligence-Dashboard/
 │   ├── Screenshot_pivotTable+chart_1.png
 │   └── Screenshot_pivotTable+chart_2.png
 │
-PowerBI_Phase2/
-│
-├── Austin_Crime_Intelligence_Dashboard.pbix
-├── Main_Dashboard.png
-├── Crime_DrillThrough.png
-├── APD_Sector_DrillThrough.png
-├── Drill_Down.png
-├── Dynamic_Title_Single_Month.png
-├── Dynamic_Title_Multiple_Months.png
-├── Custom_Tooltip.png
-├── APD_Sector_Map.png
-└── Star_Schema_Diagram.png
+├── PowerBI_Phase2/
+│   ├── AustinCrime_Intelligence_Dashboard.pbix
+│   ├── Dashboard View.png
+│   ├── Drill Through Crime.png
+│   ├── Drill through APD Sector.png
+│   ├── Drill_down.png
+│   ├── dynamic_title1.png
+│   ├── dynamic_title1_new.png
+│   ├── dynamic_title2.png
+│   ├── tooltip.png
+│   ├── Map view.png
+│   └── Star Schema Diagram.png
 │
 └── README.md
 ```
