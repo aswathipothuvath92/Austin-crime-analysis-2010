@@ -11,13 +11,14 @@
 - **Standout technical decision:** Migrated from a flat Excel table to a star schema (`Fact_Crime_Data` + `Dim_Date`, `Dim_Offense`) to support scalable DAX measures, drill-through pages, and dynamic tooltip visuals
 - **Key finding:** Burglary was the most common offense (16.1K incidents, ~16.6% of total volume), followed by Theft/Larceny (13.8K) and Disturbance/Public Issues (11.8K) — together the top 3 categories account for roughly 43% of all incidents. Edward sector recorded the highest overall crime volume citywide.
 - **Excel exploratory analysis (Phase 1):** [Interactive workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) · [Screenshots](Excel_Phase1/)
-- **Power BI dashboard (live, interactive):** [View live report](your-publish-to-web-link-here)
+  
+## Dashboard Preview
 
-![Power BI Dashboard](PowerBI/Screenshot_dashboard.png)
-*Main Power BI dashboard — see Dashboard Features below for drill-through and tooltip details.*
-[Drill Throgh Crime with single month selected.png]
-[ 
+*Main Power BI dashboard — see **Dashboard Features** below for details on drill-through pages, dynamic titles, maps, and custom tooltips.*
 
+### Main Dashboard
+
+![Main Dashboard](PowerBI_Phase2/Main%20Dashboard%20View.png)
 
 
 ---
@@ -86,7 +87,7 @@ Power Query — Power BI's built-in ETL tool — standardized formats, cleaned c
 
 **Why star schema?** Cleaner relationships, easier DAX development, better dashboard performance, and a structure that scales.
 
-![Star Schema Data Model](PowerBI/Screenshot_dataModel.png)
+![Star Schema Data Model](PowerBI_Phase2/Star%20Schema%20Diagram.png)
 *Star schema showing Fact_Crime_Data connected to Dim_Date and Dim_Offense.*
 
 ---
@@ -94,16 +95,51 @@ Power Query — Power BI's built-in ETL tool — standardized formats, cleaned c
 ## Dashboard Features
 
 - **Interactive crime analysis** — volume, trends over time, top categories, location and sector distribution
+
+  
+- **Drill-through** — from crime category or APD sector into detailed time/location/incident patterns
+  
+Crime Drill-Through 
+  
+![Crime Drill-Through](PowerBI_Phase2/Drill%20Through%20Crime.png)
+
+APD Sector Drill-Through
+
+![APD Sector Drill-Through](PowerBI_Phase2/Drill%20through%20APD%20Sector.png)
+
+
+- **Drill-down** — hierarchical exploration without cluttering the main view
+  
+![Drill-down](PowerBI_Phase2/Drill_down.png)
+  
+Drill-Down Analysis: Expanding the Theft/Larceny category reveals individual offense types, allowing users to move from category-level summaries to detailed offense analysis.
+
+  
+- **Dynamic DAX-driven titles** — update automatically to reflect active filter context 
+   
+![Dynamic Title1](PowerBI_Phase2/dynamic_title1.png)
+  
+Dynamic title when  Crime: Burglary and Month: April
+
+![Dynamic Title1](PowerBI_Phase2/dynamic_title2.png)
+  
+ Dynamic title when  Crime: Theft and Month: Multiple months selected/ Select all
+
+  
 - **APD sector geographic analysis** — a dedicated map page comparing crime activity across sectors, built using a boundary map sourced from a public government site and a downloaded GeoJSON file for the APD sector shapes. Includes independent slicers for APD Sector Name, Offense Category, Month, and Location Type, so users can isolate any combination and see how crime distribution shifts geographically
 
-![APD Sector Map](PowerBI/Screenshot_sectorMap.png)
+![APD Sector Map](PowerBI_Phase2/Map%20view.png)
+
 *Dedicated APD Sector map page with slicers for Sector Name, Offense Category, Month, and Location Type.*
 
-- **Drill-through** — from crime category or APD sector into detailed time/location/incident patterns
-- **Drill-down** — hierarchical exploration without cluttering the main view
-- **Dynamic DAX-driven titles** — update automatically to reflect active filter context (e.g., *"Detailed Analysis: Burglary • April"*)
+
 - **Custom tooltips** — supporting insights on hover without adding visual clutter
+  
+  ![Custom Tooltip](PowerBI_Phase2/tooltip.png)
+
+  
 - **Slicers & navigation** — month/sector filtering, plus a bookmark-based reset button
+
 
 ## Key DAX Measures
 
