@@ -93,53 +93,41 @@ Power Query — Power BI's built-in ETL tool — standardized formats, cleaned c
 ---
 
 ## Dashboard Features
-
 - **Interactive crime analysis** — volume, trends over time, top categories, location and sector distribution
-
   
 - **Drill-through** — from crime category or APD sector into detailed time/location/incident patterns
   
 Crime Drill-Through 
-  
 ![Crime Drill-Through](PowerBI_Phase2/Drill%20Through%20Crime.png)
 
 APD Sector Drill-Through
-
 ![APD Sector Drill-Through](PowerBI_Phase2/Drill%20through%20APD%20Sector.png)
-
 
 - **Drill-down** — hierarchical exploration without cluttering the main view
   
 ![Drill-down](PowerBI_Phase2/Drill_down.png)
   
-Drill-Down Analysis: Expanding the Theft/Larceny category reveals individual offense types, allowing users to move from category-level summaries to detailed offense analysis.
+Drill-Down Analysis: Expanding the Burglary category reveals individual offense types, allowing users to move from category-level summaries to detailed offense analysis.
 
-  
 - **Dynamic DAX-driven titles** — update automatically to reflect active filter context 
-   
-![Dynamic Title1](PowerBI_Phase2/dynamic_title1.png)
-  
+
 Dynamic title when  Crime: Burglary and Month: April
+![Dynamic Title1](PowerBI_Phase2/dynamic_title1.png)
 
+Dynamic title when  Crime: Theft/Larceny and Month: Multiple months selected/ Select all
 ![Dynamic Title1](PowerBI_Phase2/dynamic_title2.png)
-  
- Dynamic title when  Crime: Theft and Month: Multiple months selected/ Select all
 
-  
 - **APD sector geographic analysis** — a dedicated map page comparing crime activity across sectors, built using a boundary map sourced from a public government site and a downloaded GeoJSON file for the APD sector shapes. Includes independent slicers for APD Sector Name, Offense Category, Month, and Location Type, so users can isolate any combination and see how crime distribution shifts geographically
 
 ![APD Sector Map](PowerBI_Phase2/Map%20view.png)
 
 *Dedicated APD Sector map page with slicers for Sector Name, Offense Category, Month, and Location Type.*
 
-
 - **Custom tooltips** — supporting insights on hover without adding visual clutter
   
   ![Custom Tooltip](PowerBI_Phase2/tooltip.png)
 
-  
 - **Slicers & navigation** — month/sector filtering, plus a bookmark-based reset button
-
 
 ## Key DAX Measures
 
