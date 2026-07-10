@@ -12,15 +12,15 @@
 - **Key finding:** Burglary was the most common offense (16.1K incidents, ~16.6% of total volume), followed by Theft/Larceny (13.8K) and Disturbance/Public Issues (11.8K) — together the top 3 categories account for roughly 43% of all incidents. Edward sector recorded the highest overall crime volume citywide.
 - **Excel exploratory analysis (Phase 1):** [Interactive workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) · [Screenshots](Excel_Phase1/)
 - **Power BI Dasboard (Phase 2):** [PowerBI Dashboard](PowerBI_Phase2/AustinCrime_Intelligence_Dashboard.pbix)
-  
-## Dashboard Preview
-
-*Main Power BI dashboard — see **Dashboard Features** below for details on drill-through pages, dynamic titles, maps, and custom tooltips.*
 
 ## How to View the Live Dashboard
 1. Download the `[PowerBI Dashboard](PowerBI_Phase2/AustinCrime_Intelligence_Dashboard.pbix)' file from this repository.
 2. Open it using [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Free to download).
    
+## Dashboard Preview
+
+*Main Power BI dashboard — see **Dashboard Features** below for details on drill-through pages, dynamic titles, maps, and custom tooltips.*
+
 ### Main Dashboard
 
 ![Main Dashboard](PowerBI_Phase2/Dashboard%20View.png)
@@ -163,8 +163,6 @@ Based on the patterns surfaced in the dashboard, a few directions worth explorin
 - **Increase visibility around residences**, the leading incident location by far (16.1K burglary incidents alone) — a strong candidate for targeted lighting, cameras, or neighborhood patrol checkpoints.
 - **Align shift staffing with the daily/hourly trend**: incidents rise through the afternoon into a ~10 PM peak, and climb from a Monday low toward the weekend — suggesting evening and weekend coverage may offer more impact than a flat staffing model.
 - **Give Edward sector a closer look**, since it carries the highest overall incident volume citywide — worth investigating whether that reflects population density, commercial activity, or another underlying driver before concluding it needs more resources per capita.
-
-*(Framed as hypotheses the data supports — not policy conclusions, since this is a partial, single-year dataset used for portfolio purposes.)*
 
 ## Challenges & Solutions
 
