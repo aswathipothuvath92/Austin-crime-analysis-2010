@@ -10,11 +10,15 @@
 - **What it does:** Turns ~97,000 raw crime incident records into an interactive dashboard exploring crime category, geography (APD sector), location type, and time trends
 - **Standout technical decision:** Migrated from a flat Excel table to a star schema (`Fact_Crime_Data` + `Dim_Date`, `Dim_Offense`) to support scalable DAX measures, drill-through pages, and dynamic tooltip visuals
 - **Key finding:** Burglary was the most common offense (16.1K incidents, ~16.6% of total volume), followed by Theft/Larceny (13.8K) and Disturbance/Public Issues (11.8K) — together the top 3 categories account for roughly 43% of all incidents. Edward sector recorded the highest overall crime volume citywide.
-- **View the original Excel analysis (interactive workbook):** [Open in Excel Online](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU)
+- **Excel exploratory analysis (Phase 1):** [Interactive workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) · [Screenshots](Excel_Phase1/)
 - **Power BI dashboard (live, interactive):** [View live report](your-publish-to-web-link-here)
 
 ![Power BI Dashboard](PowerBI/Screenshot_dashboard.png)
 *Main Power BI dashboard — see Dashboard Features below for drill-through and tooltip details.*
+[Drill Throgh Crime with single month selected.png]
+[ 
+
+
 
 ---
 
@@ -51,10 +55,7 @@ Crime incidents reported in Austin from January to mid-September 2010, sourced f
 
 ## Phase 1: Exploratory Analysis in Excel
 
-The dataset was first explored to understand structure, identify duplicates/incomplete records, and clean inconsistent values before analysis began. Explore the full interactive version here: [Open the Excel workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) — each worksheet represents a step in the process (original data, cleaned data, pivot table, interactive dashboard, view-only dashboard).
-
-![Excel Dashboard](Excel_Phase1/Screenshot_dashboard.png)
-*Excel dashboard with Location Type and Month slicers, built on raw (ungrouped) offense descriptions.*
+The dataset was first explored to understand structure, identify duplicates/incomplete records, and clean inconsistent values before analysis began. Explore the full interactive version here: [Open the Excel workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) — each worksheet represents a step in the process (original data, cleaned data, pivot table, interactive dashboard, view-only dashboard). Screenshots of the dashboard, cleaned data, and pivot tables/charts are available in the [`Excel_Phase1`](Excel_Phase1/) folder.
 
 Excel's Pivot Tables and Pivot Charts summarized crime frequency by raw offense description, peak crime hours, monthly trends, and distribution across location types — establishing the key metrics later refined and built into the Power BI model. Offenses weren't yet grouped into categories at this stage; that happened during the Power Query ETL step below.
 
@@ -157,22 +158,46 @@ Based on the patterns surfaced in the dashboard, a few directions worth explorin
 **Documentation:** GitHub project documentation, data storytelling
 
 ## Repository Structure
-
 Austin-Crime-Analysis/
+
 │
+
 ├── Excel_Phase1/
-│   ├── Cleaned Dataset
-│   ├── Screenshot_dashboard.png
-│   ├── Screenshot_cleanedData.png
-│   ├── Screenshot_pivotTable+chart_1.png
-│   └── Screenshot_pivotTable+chart_2.png
+
+│  
+
+├── Cleaned Dataset
+
+│ 
+    ├── Screenshot_dashboard.png
+    
 │
-├── PowerBI/
-│   ├── Power BI Report (.pbix)
-│   ├── Screenshot_dashboard.png
-│   ├── Screenshot_dataModel.png
-│   └── Screenshot_sectorMap.png
+    ├── Screenshot_cleanedData.png
+    
 │
+    ├── Screenshot_pivotTable+chart_1.png
+    
+│ 
+    └── Screenshot_pivotTable+chart_2.png
+    
+│
+
+├── PowerBI_Phase2/
+
+│ 
+    ├── Power BI Report (.pbix)
+    
+│
+    ├── Screenshot_dashboard.png
+    
+│
+    ├── Screenshot_dataModel.png
+    
+│
+    └── Screenshot_sectorMap.png
+    
+│
+
 └── README.md
 
 ## Future Improvements
