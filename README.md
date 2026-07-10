@@ -11,6 +11,7 @@
 - **Standout technical decision:** Migrated from a flat Excel table to a star schema (`Fact_Crime_Data` + `Dim_Date`, `Dim_Offense`) to support scalable DAX measures, drill-through pages, and dynamic tooltip visuals
 - **Key finding:** Burglary was the most common offense (16.1K incidents, ~16.6% of total volume), followed by Theft/Larceny (13.8K) and Disturbance/Public Issues (11.8K) — together the top 3 categories account for roughly 43% of all incidents. Edward sector recorded the highest overall crime volume citywide.
 - **Excel exploratory analysis (Phase 1):** [Interactive workbook](https://1drv.ms/x/c/43a4bb5b1b38b739/IQBVQKjRga82R7Cl-c6rRtlfAZQuTxVs8q5xAXYYHYt9Xu4?e=Fh8GqU) · [Screenshots](Excel_Phase1/)
+- **Power BI Dasboard (Phase 2):** [PowerBI Dashboard](PowerBI_Phase2/Austin_crime_data_analysis_powerbi.pbix)
   
 ## Dashboard Preview
 
@@ -97,31 +98,31 @@ Power Query — Power BI's built-in ETL tool — standardized formats, cleaned c
   
 - **Drill-through** — from crime category or APD sector into detailed time/location/incident patterns
   
-Crime Drill-Through 
+Crime Drill-Through
 ![Crime Drill-Through](PowerBI_Phase2/Drill%20Through%20Crime.png)
 
 APD Sector Drill-Through
 ![APD Sector Drill-Through](PowerBI_Phase2/Drill%20through%20APD%20Sector.png)
 
-- **Drill-down** — hierarchical exploration without cluttering the main view
-  
+- **Drill-down Analysis** — hierarchical exploration without cluttering the main view
+
+Expanding the Burglary category reveals individual offense types, allowing users to move from category-level summaries to detailed offense analysis  
 ![Drill-down](PowerBI_Phase2/Drill_down.png)
-  
-Drill-Down Analysis: Expanding the Burglary category reveals individual offense types, allowing users to move from category-level summaries to detailed offense analysis.
 
 - **Dynamic DAX-driven titles** — update automatically to reflect active filter context 
 
-Dynamic title when  Crime: Burglary and Month: April
-![Dynamic Title1](PowerBI_Phase2/dynamic_title1.png)
+Dynamic title when  Crime: Theft/Larceny and Month: April
+![Dynamic Title1](PowerBI_Phase2/dynamic_title1_new.png)
 
 Dynamic title when  Crime: Theft/Larceny and Month: Multiple months selected/ Select all
 ![Dynamic Title1](PowerBI_Phase2/dynamic_title2.png)
 
-- **APD sector geographic analysis** — a dedicated map page comparing crime activity across sectors, built using a boundary map sourced from a public government site and a downloaded GeoJSON file for the APD sector shapes. Includes independent slicers for APD Sector Name, Offense Category, Month, and Location Type, so users can isolate any combination and see how crime distribution shifts geographically
-
+- **APD sector geographic analysis** — a dedicated map page comparing crime activity across sectors, built using a boundary map sourced from a public government site and a downloaded GeoJSON file for the APD sector shapes. Includes independent slicers for APD Sector Name, Offense Category, Month, and Location Type, so users can isolate any combination and see how crime distribution shifts geographically.
+  
+*Dedicated APD Sector map page with slicers for Sector Name, Offense Category, Month, and Location Type.*
 ![APD Sector Map](PowerBI_Phase2/Map%20view.png)
 
-*Dedicated APD Sector map page with slicers for Sector Name, Offense Category, Month, and Location Type.*
+
 
 - **Custom tooltips** — supporting insights on hover without adding visual clutter
   
@@ -181,48 +182,33 @@ Based on the patterns surfaced in the dashboard, a few directions worth explorin
 **Power BI:** Star schema modeling, relationships, DAX, drill-through, custom tooltips, bookmarks/navigation
 **Documentation:** GitHub project documentation, data storytelling
 
+
 ## Repository Structure
-Austin-Crime-Analysis/
 
+```text
+Austin-Crime-Intelligence-Dashboard/
 │
-
 ├── Excel_Phase1/
-
-│  
-
-├── Cleaned Dataset
-
-│ 
-    ├── Screenshot_dashboard.png
-    
+│   ├── Screenshot_cleanedData.png
+│   ├── Screenshot_dashboard.png
+│   ├── Screenshot_pivotTable+chart_1.png
+│   └── Screenshot_pivotTable+chart_2.png
 │
-    ├── Screenshot_cleanedData.png
-    
+PowerBI_Phase2/
 │
-    ├── Screenshot_pivotTable+chart_1.png
-    
-│ 
-    └── Screenshot_pivotTable+chart_2.png
-    
+├── Austin_Crime_Intelligence_Dashboard.pbix
+├── Main_Dashboard.png
+├── Crime_DrillThrough.png
+├── APD_Sector_DrillThrough.png
+├── Drill_Down.png
+├── Dynamic_Title_Single_Month.png
+├── Dynamic_Title_Multiple_Months.png
+├── Custom_Tooltip.png
+├── APD_Sector_Map.png
+└── Star_Schema_Diagram.png
 │
-
-├── PowerBI_Phase2/
-
-│ 
-    ├── Power BI Report (.pbix)
-    
-│
-    ├── Screenshot_dashboard.png
-    
-│
-    ├── Screenshot_dataModel.png
-    
-│
-    └── Screenshot_sectorMap.png
-    
-│
-
 └── README.md
+```
 
 ## Future Improvements
 
