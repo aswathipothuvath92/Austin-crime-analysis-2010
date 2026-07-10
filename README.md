@@ -17,6 +17,10 @@
 
 *Main Power BI dashboard — see **Dashboard Features** below for details on drill-through pages, dynamic titles, maps, and custom tooltips.*
 
+## How to View the Live Dashboard
+1. Download the `[PowerBI Dashboard](PowerBI_Phase2/AustinCrime_Intelligence_Dashboard.pbix)' file from this repository.
+2. Open it using [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Free to download).
+   
 ### Main Dashboard
 
 ![Main Dashboard](PowerBI_Phase2/Dashboard%20View.png)
